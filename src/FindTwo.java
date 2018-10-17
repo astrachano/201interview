@@ -3,8 +3,9 @@ import java.util.Arrays;
 import java.util.Collections;
 
 public class FindTwo {
+	
 	public int[] methodA(int[] nums, int target) {
-		int[] ret = {0,0};
+
 		for(int j=0; j < nums.length; j++) {
 			for(int k=j+1; k < nums.length; k++) {
 				if (nums[j] + nums[k] == target) {
@@ -12,7 +13,7 @@ public class FindTwo {
 				}
 			}
 		}
-		return ret;
+		return new int[] {0,0}; // never reached
 	}
 	
 	public int[] methodB(int[] nums, int target) {
